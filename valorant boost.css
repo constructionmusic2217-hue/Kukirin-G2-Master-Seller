@@ -1,0 +1,179 @@
+﻿/* Stilimi i Përgjithshëm */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navigimi */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #ff5722;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff5722;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff5722;
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://unsplash.com') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #ccc;
+}
+
+.btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e04819;
+}
+
+/* Specifikimet */
+.specs {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.specs h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.spec-card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 4px solid #ff5722;
+}
+
+.spec-card h3 {
+    font-size: 28px;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+/* Formulari i Porosisë */
+.order-section {
+    background-color: #1a1a1a;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.order-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.order-section p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.order-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-form input {
+    padding: 15px;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.order-form input:focus {
+    border-color: #ff5722;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #e04819;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #666;
+    font-size: 14px;
+}
